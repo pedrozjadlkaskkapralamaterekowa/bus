@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figury i bryły</title>
+    <link rel="stylesheet"  href="style.css">
+<link rel="icon" href="kys.png">
+</head>
+<body>
+      
+<table>
+    <tr><td ><button value="kwadrat" id="input1" onclick="ukryj1()">kwadrat</button></td> 
+        <td><button value="prostokąt" id="input1" onclick="ukryj2()"> prostokąt</button></td> 
+        <td ><button value="trojkąt rownoboczny" id="input1" onclick="ukryj3()"> trojkąt rownoboczny</button></td>
+    </tr>
+    <tr><td><button value="rownoległobok" id="input1" onclick="ukryj4()">rownoległobok</button> </td> 
+        <td ><button value="trapez" id="input1" onclick="ukryj5()">trapez</button></td>  
+        <td ><button value="romb" id="input1" onclick="ukryj6()">romb</button></td>
+    </tr>
+    <tr><td ><button value="sześcian" id="input1" onclick="ukryj7()">sześcian</button></td>  
+        <td ><button value="koło" id="input1" onclick="ukryj8()">koło</button></td>  
+        <td ><button value="kula" id="input1" onclick="ukryj9()">kula</button></td>
+    </tr>
+</table>
+<div id="kwadrat">
+    <h1>kwadrat</h1>
+    <p>bok A</p>
+    <input type="number"   class="inputform" id="bokkwadrat">
+
+    <p>pole powierzchni</p>
+<input type="number"   class="inputform">
+
+<p>obwod</p>
+<input type="number"   class="inputform">
+
+<p>wynik</p>
+<br><input type="number"   class="inputform" id="wynikkwadrat">
+
+<br><input type="button" value="obwod" id="buttonform" onclick="kwadrat()">
+<br><input type="button" value="pole powierzchni"  id="buttonform" onclick="kwadrat1()">
+</div>
+
+<div id="prostokat">
+    <h1>prostokąt</h1>
+    <p>bok A</p>
+    <input type="number"   class="inputform">
+    <p>bok B</p>
+    <input type="number"   class="inputform">
+
+    <br><input type="button" value="obwod" id="buttonform">
+    <br><input type="button" value="pole  powierzchni">
+
+    <p>wynik:</p>
+    <input type="number"   class="inputform">
+</div>
+<div id="trojkat">
+    <h1>trojkąt rownoboczny</h1>
+    <p>boki A</p>
+    <input type="number"   class="inputform">
+    <p>podstawa</p>
+    <input type="number"   class="inputform">
+    <p>wysokość</p>
+    <input type="number"   class="inputform">
+    <p>wynik</p>
+    <input type="number"   class="inputform">
+    <br> <input type="button" value="obwod" id="buttonform">
+    <br><input type="button" value="pole powierzchni"  id="buttonform">
+</div>
+
+<div id="rownoleglobok">
+    <h1>rownoległobok</h1>
+    <p>Długosc Bokow A</p>
+    <input type="number"   class="inputform">
+    <p>Długosc Bokow B</p>
+    <input type="number"   class="inputform">
+    <p>wysokość</p>
+    <input type="number"   class="inputform">
+    <p>wynik</p>
+    <input type="number"   class="inputform">
+    <br><input type="button" value="obwod" id="buttonform">
+    <br><input type="button" value="pole powierzchni"  id="buttonform">
+</div>
+
+<div id="trapez">
+    <h1>trapez</h1>
+    <p>Długosc Bokow A</p>
+    <input type="number"   class="inputform">
+    <p>Długosc Bokow B</p>
+    <input type="number"   class="inputform">
+    <p>wysokość</p>
+    <input type="number"   class="inputform">
+    <p>wynik</p>
+    <input type="number"   class="inputform">
+    <br><input type="button" value="obwod" id="buttonform">
+    <br><input type="button" value="pole powierzchni"  id="buttonform">
+</div>
+
+<div id="romb">
+    <h1>romb</h1>
+    <p>Długosc wysokości A</p>
+    <input type="number"   class="inputform">
+    <p>Długosc wysokości B</p>
+    <input type="number"   class="inputform">
+ 
+    <p>Długosc Bokow A</p>
+    <input type="number"   class="inputform">
+    <p>Długosc Bokow B</p>
+    <input type="number"   class="inputform">
+
+    <p>wynik</p>
+    <input type="number"   class="inputform">
+    <br><input type="button" value="obwod" id="buttonform">
+    <br><input type="button" value="pole powierzchni"  id="buttonform">
+</div>
+
+<div id="szescian">
+    <h1>sześcian</h1>
+    <p>Długosc Boku</p>
+    <input type="number"   class="inputform">
+    <p>wynik</p>
+    <input type="number"   class="inputform">
+    <br> <input type="button" value="obwod" id="buttonform">
+    <br><input type="button" value="pole powierzchni"  id="buttonform">
+    <br><input type="button" value="objętość" id="buttonform">
+</div>
+<div id="kolo">
+    <h1>koło</h1>
+    <p>Długosc promienia</p>
+    <input type="number"   class="inputform">
+    <p>wynik</p>
+    <input type="number"   class="inputform">
+    <br><input type="button" value="obwod" id="buttonform">
+    <br><input type="button" value="pole powierzchni"  id="buttonform">
+</div>
+
+<div id="kula">
+    <h1>kula</h1>
+    <p>Długosc promienia</p>
+    <input type="number"   class="inputform">
+    <p>wynik</p>
+    <input type="number"   class="inputform">
+    <br><input type="button" value="obwod" id="buttonform">
+    <br><input type="button" value="pole powierzchni"  id="buttonform">
+    <br><input type="button" value="objętość" id="buttonform">
+</div>
+
+
+<script src="script.js"></script>
+<script src="testy/jQuery.js"></script>
+</body>
+</html>
